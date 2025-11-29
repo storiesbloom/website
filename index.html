@@ -327,4 +327,58 @@
                 occ_xmas_title: "Christmas", occ_xmas_desc: "A magical stocking stuffer personalized for your little one.",
                 occ_mile_title: "Milestones", occ_mile_desc: "New sibling, starting school, or learning to read.",
                 banner_title: "Looking for personalized greeting cards?", banner_desc: "We create custom designs for your special events. Contact us for a quote.", banner_btn: "Contact Us",
-                price_title: "Choose
+                price_title: "Choose Your Format", price_subtitle: "Simple pricing. No hidden fees. Secure checkout via Gumroad.",
+                p1_title: "Digital Storybook", p1_sub: "For tablets & quick delivery.",
+                p2_title: "Softcover + PDF", p2_sub: "Lightweight, durable paperback.",
+                p3_title: "Hardcover + PDF", p3_sub: "A timeless keepsake.",
+                badge_value: "GREAT VALUE", badge_premium: "PREMIUM",
+                feat_pages: "24 Full-Color Pages",
+                feat_pdf: "High-Resolution PDF", feat_pers: "Fully Personalized Story", 
+                feat_email: "Crafted & Ready in 72 Hrs",
+                feat_pdf_incl: "Includes Digital PDF", feat_soft: "Softcover Book (8.5\" x 8.5\")", feat_hard: "Hardcover Book (8.5\" x 8.5\")", feat_ship: "Free Shipping",
+                btn_select: "Select",
+                footer_tagline: "Making your loved ones the heroes of their own stories.", footer_privacy: "Privacy Policy", footer_terms: "Terms of Service"
+            },
+            nl: {
+                nav_how: "Hoe het werkt", nav_books: "Boeken", nav_occasions: "Gelegenheden", 
+                nav_cta: "Geef een Magisch Verhaal",
+                hero_badge: "✨ Het perfecte cadeau voor 2-6 jaar", hero_text_start: "Maak van je geliefde de ", hero_text_highlight: "Held", hero_text_end: " van hun eigen verhaal.",
+                hero_desc: "Creëer magische, persoonlijke avonturen waarin jouw kind de ster is. Volledig geïllustreerd, unieke verhaallijnen, geleverd als PDF of boek.",
+                hero_cta_primary: "Maak Hen de Ster",
+                hero_cta_secondary: "Hoe werkt het?",
+                how_title: "Magie in 3 Simpele Stappen", how_subtitle: "Wij maken het makkelijk om een herinnering voor het leven te creëren.",
+                step1_title: "1. Kies Formaat", step1_desc: "Kies tussen Digitaal, Softcover of onze Premium Hardcover editie.",
+                step2_title: "2. Vertel je Verhaal", step2_desc: "Vul ons formulier in. Kies personages, locaties en verhaallijnen om het uniek te maken.",
+                step3_title: "3. Ontvang de Magie", 
+                step3_desc: "Je persoonlijke PDF is binnen 72 uur klaar, of wacht tot het boek op de deurmat valt.",
+                gallery_title: "Kijkje in de boeken", gallery_subtitle: "Prachtige illustraties van 8.5\" x 8.5\" met jouw kleintje. Klik om te vergroten.",
+                occasion_title: "Voor Elke Gelegenheid",
+                occ_bday_title: "Verjaardagen", occ_bday_desc: "Het perfecte unieke cadeau dat niet onderin de speelgoedkist belandt.",
+                occ_xmas_title: "Kerstmis", occ_xmas_desc: "Een magisch cadeau speciaal gepersonaliseerd voor jouw kleintje.",
+                occ_mile_title: "Mijlpalen", occ_mile_desc: "Nieuw broertje/zusje, naar school gaan of leren lezen.",
+                banner_title: "Op zoek naar gepersonaliseerde wenskaarten?", banner_desc: "Wij maken unieke ontwerpen voor speciale evenementen. Neem contact op voor een offerte.", banner_btn: "Contact Opnemen",
+                price_title: "Kies Je Formaat", price_subtitle: "Eenvoudige prijzen. Geen verborgen kosten. Veilig betalen via Gumroad.",
+                p1_title: "Digitaal Boek", p1_sub: "Voor tablets & snelle levering.",
+                p2_title: "Softcover + PDF", p2_sub: "Lichtgewicht en duurzaam.",
+                p3_title: "Hardcover + PDF", p3_sub: "Een herinnering voor altijd.",
+                badge_value: "BESTE WAARDE", badge_premium: "PREMIUM",
+                feat_pages: "24 Pagina's in Kleur",
+                feat_pdf: "Hoge Resolutie PDF", feat_pers: "Volledig Gepersonaliseerd", 
+                feat_email: "Gemaakt binnen 72 uur",
+                feat_pdf_incl: "Inclusief Digitale PDF", feat_soft: "Softcover Boek (8.5\" x 8.5\")", feat_hard: "Hardcover Boek (8.5\" x 8.5\")", feat_ship: "Gratis Verzending",
+                btn_select: "Selecteer",
+                footer_tagline: "Maak je geliefden de helden van hun eigen verhalen.", footer_privacy: "Privacybeleid", footer_terms: "Algemene Voorwaarden"
+            }
+        };
+
+        function changeLanguage(lang) {
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) { element.textContent = translations[lang][key]; }
+            });
+            document.querySelectorAll('select').forEach(sel => sel.value = lang);
+        }
+    </script>
+</body>
+</html>
