@@ -128,7 +128,7 @@
                 <div class="p-8 rounded-2xl bg-brand-cream border border-brand-dark/5 card-hover">
                     <div class="w-16 h-16 mx-auto rounded-full border border-brand-dark flex items-center justify-center text-brand-dark text-2xl mb-6"><i class="fa-solid fa-cart-shopping"></i></div>
                     <h3 class="text-2xl font-serif mb-4 text-brand-dark" data-i18n="step1_title">1. Select Format</h3>
-                    <p class="text-brand-dark/70 leading-relaxed" data-i18n="step1_desc">Choose between our Digital, Softcover, or Premium Hardcover editions.</p>
+                    <p class="text-brand-dark/70 leading-relaxed" data-i18n="step1_desc">Choose between our Digital or Softcover editions.</p>
                 </div>
                 <div class="p-8 rounded-2xl bg-brand-cream border border-brand-dark/5 card-hover">
                     <div class="w-16 h-16 mx-auto rounded-full border border-brand-dark flex items-center justify-center text-brand-dark text-2xl mb-6"><i class="fa-solid fa-pen-nib"></i></div>
@@ -205,7 +205,8 @@
                 <h2 class="text-4xl lg:text-5xl font-serif text-brand-dark mb-4" data-i18n="price_title">Choose Your Format</h2>
                 <p class="text-brand-dark/70" data-i18n="price_subtitle">Simple pricing. No hidden fees. Secure checkout via Gumroad.</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+            <!-- Modified Grid: 2 Columns, Centered with max-w-4xl -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start max-w-4xl mx-auto">
                 <!-- PDF -->
                 <div class="bg-brand-white rounded-xl shadow-sm border border-brand-dark/10 p-8 flex flex-col card-hover relative h-full">
                     <div class="mb-4">
@@ -237,22 +238,6 @@
                         <li class="flex items-center"><i class="fa-solid fa-check text-brand-primary mr-3"></i> <span data-i18n="feat_ship">Free Shipping</span></li>
                     </ul>
                     <a href="https://storiesbloom.gumroad.com/l/wttvgo" class="flex justify-center items-center w-full text-center bg-brand-primary hover:bg-brand-dark text-white font-bold py-3 rounded-lg shadow-md transition" data-i18n="btn_select">Select</a>
-                </div>
-                <!-- Hardcover -->
-                <div class="bg-brand-white rounded-xl shadow-xl border-2 border-brand-accent p-8 flex flex-col card-hover relative h-full transform md:-translate-y-4">
-                    <div class="absolute top-0 right-0 bg-brand-accent text-brand-dark text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg uppercase tracking-wider" data-i18n="badge_premium">Premium</div>
-                    <div class="mb-4">
-                        <h3 class="text-2xl font-serif font-bold text-brand-dark" data-i18n="p3_title">Hardcover + PDF</h3>
-                        <p class="text-brand-dark/50 text-sm mt-1" data-i18n="p3_sub">A timeless keepsake.</p>
-                    </div>
-                    <div class="mb-6"><span class="text-4xl font-serif text-brand-dark">€55</span></div>
-                    <ul class="space-y-3 mb-8 text-brand-dark/80 text-sm flex-grow">
-                        <li class="flex items-center"><i class="fa-solid fa-book-open text-brand-primary mr-3"></i> <span data-i18n="feat_pages">24 Full-Color Pages</span></li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-primary mr-3"></i> <b data-i18n="feat_pdf_incl">Includes Digital PDF</b></li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-primary mr-3"></i> <span data-i18n="feat_hard">Hardcover Book (8.5" x 8.5")</span></li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-primary mr-3"></i> <span data-i18n="feat_ship">Free Shipping</span></li>
-                    </ul>
-                    <a href="https://storiesbloom.gumroad.com/l/opydk" class="flex justify-center items-center w-full text-center bg-brand-dark hover:bg-brand-primary text-white font-bold py-3 rounded-lg shadow-md transition" data-i18n="btn_select">Select</a>
                 </div>
             </div>
         </div>
@@ -315,7 +300,7 @@
                 hero_cta_primary: "Make Them the Star",
                 hero_cta_secondary: "See How it Works",
                 how_title: "Magic in 3 Simple Steps", how_subtitle: "We've made it easy to create a keepsake they will cherish forever.",
-                step1_title: "1. Select Format", step1_desc: "Choose between our Digital, Softcover, or Premium Hardcover editions.",
+                step1_title: "1. Select Format", step1_desc: "Choose between our Digital or Softcover editions.",
                 step2_title: "2. Tell Your Tale", step2_desc: "Fill out our creative form. Pick characters, settings, and storylines to make it truly unique.",
                 step3_title: "3. Unbox the Magic", 
                 step3_desc: "Your custom PDF is crafted & delivered within 72 hours, or wait for the physical book.",
@@ -328,12 +313,11 @@
                 price_title: "Choose Your Format", price_subtitle: "Simple pricing. No hidden fees. Secure checkout via Gumroad.",
                 p1_title: "Digital Storybook", p1_sub: "For tablets & quick delivery.",
                 p2_title: "Softcover + PDF", p2_sub: "Lightweight, durable paperback.",
-                p3_title: "Hardcover + PDF", p3_sub: "A timeless keepsake.",
-                badge_value: "GREAT VALUE", badge_premium: "PREMIUM",
+                badge_value: "GREAT VALUE",
                 feat_pages: "24 Full-Color Pages",
                 feat_pdf: "High-Resolution PDF", feat_pers: "Fully Personalized Story", 
                 feat_email: "Crafted & Ready in 72 Hrs",
-                feat_pdf_incl: "Includes Digital PDF", feat_soft: "Softcover Book (8.5\" x 8.5\")", feat_hard: "Hardcover Book (8.5\" x 8.5\")", feat_ship: "Free Shipping",
+                feat_pdf_incl: "Includes Digital PDF", feat_soft: "Softcover Book (8.5\" x 8.5\")", feat_ship: "Free Shipping",
                 btn_select: "Select",
                 footer_tagline: "Making your loved ones the heroes of their own stories.", footer_privacy: "Privacy Policy", footer_terms: "Terms of Service"
             },
@@ -345,7 +329,7 @@
                 hero_cta_primary: "Maak Hen de Ster",
                 hero_cta_secondary: "Hoe werkt het?",
                 how_title: "Magie in 3 Simpele Stappen", how_subtitle: "Wij maken het makkelijk om een herinnering voor het leven te creëren.",
-                step1_title: "1. Kies Formaat", step1_desc: "Kies tussen Digitaal, Softcover of onze Premium Hardcover editie.",
+                step1_title: "1. Kies Formaat", step1_desc: "Kies tussen onze Digitale of Softcover editie.",
                 step2_title: "2. Vertel je Verhaal", step2_desc: "Vul ons formulier in. Kies personages, locaties en verhaallijnen om het uniek te maken.",
                 step3_title: "3. Ontvang de Magie", 
                 step3_desc: "Je persoonlijke PDF is binnen 72 uur klaar, of wacht tot het boek op de deurmat valt.",
@@ -358,12 +342,11 @@
                 price_title: "Kies Je Formaat", price_subtitle: "Eenvoudige prijzen. Geen verborgen kosten. Veilig betalen via Gumroad.",
                 p1_title: "Digitaal Boek", p1_sub: "Voor tablets & snelle levering.",
                 p2_title: "Softcover + PDF", p2_sub: "Lichtgewicht en duurzaam.",
-                p3_title: "Hardcover + PDF", p3_sub: "Een herinnering voor altijd.",
-                badge_value: "BESTE WAARDE", badge_premium: "PREMIUM",
+                badge_value: "BESTE WAARDE",
                 feat_pages: "24 Pagina's in Kleur",
                 feat_pdf: "Hoge Resolutie PDF", feat_pers: "Volledig Gepersonaliseerd", 
                 feat_email: "Gemaakt binnen 72 uur",
-                feat_pdf_incl: "Inclusief Digitale PDF", feat_soft: "Softcover Boek (8.5\" x 8.5\")", feat_hard: "Hardcover Boek (8.5\" x 8.5\")", feat_ship: "Gratis Verzending",
+                feat_pdf_incl: "Inclusief Digitale PDF", feat_soft: "Softcover Boek (8.5\" x 8.5\")", feat_ship: "Gratis Verzending",
                 btn_select: "Selecteer",
                 footer_tagline: "Maak je geliefden de helden van hun eigen verhalen.", footer_privacy: "Privacybeleid", footer_terms: "Algemene Voorwaarden"
             }
